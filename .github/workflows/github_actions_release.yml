@@ -1,6 +1,8 @@
 name: Release
 run-name: ${{ github.actor }} is testing out GitHub Actions Release 🐧
-on: [ release ]
+on: 
+  release:
+    types: [published]
 jobs:
   release:
     name: Release GitHub Actions

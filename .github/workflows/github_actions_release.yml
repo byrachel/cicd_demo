@@ -17,4 +17,4 @@ jobs:
       run: |
         ls ${{ github.workspace }}
     - run: echo "🍏 This job's status is ${{ job.status }}."
-    - run: echo "🎉 Version published is ${github.event.release.tag_name}."
+    - run: echo "🎉 Version published is ${{github.event.release.tag_name}}."
